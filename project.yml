@@ -1,0 +1,77 @@
+name: MechanicalToy
+options:
+  bundleIdPrefix: com.utkarsh
+  deploymentTarget:
+    iOS: '27.0'
+  xcodeVersion: '27.0'
+  createIntermediateGroups: true
+settings:
+  base:
+    SWIFT_VERSION: '6.0'
+    MARKETING_VERSION: '1.0'
+    CURRENT_PROJECT_VERSION: '4'
+    DEVELOPMENT_TEAM: ""
+    CODE_SIGN_STYLE: Automatic
+    ENABLE_USER_SCRIPT_SANDBOXING: YES
+targets:
+  MechanicalCore:
+    type: framework
+    platform: iOS
+    sources: [Sources/MechanicalCore]
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+        PRODUCT_BUNDLE_IDENTIFIER: com.utkarsh.mechanicaltoy.core
+      configs:
+        Debug:
+          SWIFT_OPTIMIZATION_LEVEL: '-O'
+  MechanicalToy:
+    type: application
+    platform: iOS
+    sources: [App]
+    dependencies:
+      - target: MechanicalCore
+    info:
+      path: App/Info.plist
+      properties:
+        CFBundleDisplayName: Mechanical Toy
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        NSMotionUsageDescription: 'Phone movement shifts chrome reflections and holographic surfaces while Mechanical Toy is visible. You can turn this off in settings. Experiment tilt controls are enabled separately.'
+        UILaunchScreen: {}
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: false
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+        UIUserInterfaceStyle: Dark
+        CADisableMinimumFrameDurationOnPhone: true
+        ITSAppUsesNonExemptEncryption: false
+        LSApplicationCategoryType: public.app-category.education
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.utkarsh.mechanicaltoy
+        TARGETED_DEVICE_FAMILY: '1'
+        SUPPORTS_MACCATALYST: NO
+        SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD: NO
+        SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD: NO
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        MTL_FAST_MATH: YES
+        SWIFT_STRICT_CONCURRENCY: complete
+  MechanicalToyUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources: [Tests/NativeUITests]
+    dependencies:
+      - target: MechanicalToy
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+schemes:
+  MechanicalToy:
+    build:
+      targets:
+        MechanicalToy: all
+    test:
+      targets: [MechanicalToyUITests]

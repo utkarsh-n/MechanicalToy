@@ -1,0 +1,752 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		019205BE8FB7AA359CE8A3AB /* GearGuidedLabUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5EC04B53EB8A02699D939E /* GearGuidedLabUITests.swift */; };
+		09230ED932B4D4C6893CD841 /* MechanicalSolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99F5437FA41E42377AE1F99 /* MechanicalSolver.swift */; };
+		1EBB032945E9C4A83B061E4A /* RoomEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDA5D923B424EE76B185469 /* RoomEnvironment.swift */; };
+		2604F6CB2D3BFE71BBFE88CF /* RoomLabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8308E67970A48187EFEF54 /* RoomLabView.swift */; };
+		27EDBDA65720AA575FB5123E /* GuidedLab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B10090C5240ED9055485D35 /* GuidedLab.swift */; };
+		2BE39BA29FF64B66BADED727 /* ToySettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A95E927961F3BEE3C71ACB /* ToySettingsView.swift */; };
+		3A71815D4E6CAF6F0C7D0C47 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB97CC272654B1A98162C40 /* Theme.swift */; };
+		45284A1150E2B9F1A124D1AA /* RoomAirflow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8947C886AC2B7E082F797C3B /* RoomAirflow.swift */; };
+		45BCBE5F591690A38074F943 /* WorkshopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6DAD348115BFBAF241703E /* WorkshopView.swift */; };
+		474851C89142BC4F6A3A2BCD /* MotionInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D47CFAAF95033BCD37FC68 /* MotionInput.swift */; };
+		4D5FA73033B0FEFF7C25EE0C /* MechanicalCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A729B691A43C0B15708B6AA6 /* MechanicalCore.framework */; };
+		549F421BFC3BD9A825EB9670 /* OpticalInstrumentSurface.swift in Sources */ = {isa = PBXBuildFile; fileRef = B333B7F7ECAA294AD717975F /* OpticalInstrumentSurface.swift */; };
+		64DFB0229B9F1869CB47ECC8 /* GearGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6C22A8156667D9BF6899F1 /* GearGalleryView.swift */; };
+		690CDB2510799A1A892C74E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B5FDED4D4E9A7D8E8614D8C /* Assets.xcassets */; };
+		740434A0B8E7C906EA2B9101 /* MechanicalToyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676CEC52E0ED6DA4B2721BDD /* MechanicalToyApp.swift */; };
+		7489C016656C8DDF4991D4FE /* MachinePresets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4DB864E8A2186ED6AC27DB /* MachinePresets.swift */; };
+		79E86D57C42E64260E5F755D /* GuidedLabSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8A25DFEA5950F4B9A9A670 /* GuidedLabSession.swift */; };
+		7D46E02539045C9A8E74A482 /* GuidedLabViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AA834143BF8064951E5AE0 /* GuidedLabViews.swift */; };
+		7EE6D6F249CDEA9A176BBEC6 /* GearTransmission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38296EF6FBAA970FC8DA4077 /* GearTransmission.swift */; };
+		7F781F16E320DB97FA788CC8 /* NotebookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4A5EA64B888EBEFF4F3FFE /* NotebookView.swift */; };
+		901859187CDD0F278B23100D /* GearMetalStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DFAAD49290AEC50DE2CBC1 /* GearMetalStage.swift */; };
+		A0BF1CD05AEA04CEA4C762BF /* Airflow.metal in Sources */ = {isa = PBXBuildFile; fileRef = 58659F45CE3BFF6D94C499FD /* Airflow.metal */; };
+		ACF71A23410EE38CA4B3CFDC /* ClimateRoomStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8469D3DAAD404AC8EAE0057 /* ClimateRoomStage.swift */; };
+		B286501C2712E34BC485F0D0 /* InstrumentMotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1479A4957E6F716FB5AC24 /* InstrumentMotion.swift */; };
+		B32475E00EA56757E1796B7B /* GearGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F80517CD7CBE2C9AA4BD27 /* GearGeometry.swift */; };
+		C80A8E3B53F2B2D92E7AFFCF /* MechanismStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE0EEB52CDD8B5EAED0C720 /* MechanismStage.swift */; };
+		C9E66CF9A7D446914798A086 /* ExperimentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19689D1D9267FA1B547D423 /* ExperimentDetailView.swift */; };
+		CCB7607110C23EB92D9CDA6C /* AirflowMetalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDD56C796411DCD0E196D32 /* AirflowMetalView.swift */; };
+		D490CFBC8F520E9AF260BB21 /* RoomLabModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CCC27F73E647904ABB8840 /* RoomLabModel.swift */; };
+		DA98929495A63DB3494C5565 /* GearShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 7DBBA20B39538C6229AA10A0 /* GearShaders.metal */; };
+		E8E71DBF4A64073D02895AFD /* ExperimentCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4439A80FE9F57C0201926997 /* ExperimentCatalog.swift */; };
+		EA29BB7B0C5B7F98ACD9780A /* TransmissionDriveControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5F90CFEF64FF31323B71AE /* TransmissionDriveControl.swift */; };
+		F8EAB7C3C48CA8E71F6F5D33 /* NotebookStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F2884F44D5876A66FEBDB4 /* NotebookStore.swift */; };
+		FDC6D8A9D3AAC5ECF76461AE /* MechanicalCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A729B691A43C0B15708B6AA6 /* MechanicalCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FE680CE6A4C1AE0C4A33A954 /* MechanicalToyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC681EF9B9407E6BD33A4F73 /* MechanicalToyUITests.swift */; };
+		FF1B8F736369F2921267C3CD /* MechanicalSound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849CE568DA11A2A1C054DB17 /* MechanicalSound.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		36299A93F4DEFE498BDE4E40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2DCFCF8969971B0D8EDA069 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ABD446B536DBE42BC74230F7;
+			remoteInfo = MechanicalToy;
+		};
+		CEBD17AEDB17E4DEFCD46E42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2DCFCF8969971B0D8EDA069 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1BD8100798D6A86AADCFAA9F;
+			remoteInfo = MechanicalCore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DEC41FB0DEC4BE1D8D1EC111 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FDC6D8A9D3AAC5ECF76461AE /* MechanicalCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0BB97CC272654B1A98162C40 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		0E4DB864E8A2186ED6AC27DB /* MachinePresets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachinePresets.swift; sourceTree = "<group>"; };
+		1BDA5D923B424EE76B185469 /* RoomEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomEnvironment.swift; sourceTree = "<group>"; };
+		26D47CFAAF95033BCD37FC68 /* MotionInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionInput.swift; sourceTree = "<group>"; };
+		2D4A5EA64B888EBEFF4F3FFE /* NotebookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotebookView.swift; sourceTree = "<group>"; };
+		31F2884F44D5876A66FEBDB4 /* NotebookStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotebookStore.swift; sourceTree = "<group>"; };
+		38296EF6FBAA970FC8DA4077 /* GearTransmission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GearTransmission.swift; sourceTree = "<group>"; };
+		39CBC0E122D25B5CF1DCEB1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		4439A80FE9F57C0201926997 /* ExperimentCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperimentCatalog.swift; sourceTree = "<group>"; };
+		4B5FDED4D4E9A7D8E8614D8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4B6C22A8156667D9BF6899F1 /* GearGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GearGalleryView.swift; sourceTree = "<group>"; };
+		58659F45CE3BFF6D94C499FD /* Airflow.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Airflow.metal; sourceTree = "<group>"; };
+		5B10090C5240ED9055485D35 /* GuidedLab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidedLab.swift; sourceTree = "<group>"; };
+		5EDD56C796411DCD0E196D32 /* AirflowMetalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirflowMetalView.swift; sourceTree = "<group>"; };
+		676CEC52E0ED6DA4B2721BDD /* MechanicalToyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MechanicalToyApp.swift; sourceTree = "<group>"; };
+		7DBBA20B39538C6229AA10A0 /* GearShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = GearShaders.metal; sourceTree = "<group>"; };
+		7E5EC04B53EB8A02699D939E /* GearGuidedLabUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GearGuidedLabUITests.swift; sourceTree = "<group>"; };
+		83DFAAD49290AEC50DE2CBC1 /* GearMetalStage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GearMetalStage.swift; sourceTree = "<group>"; };
+		849CE568DA11A2A1C054DB17 /* MechanicalSound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MechanicalSound.swift; sourceTree = "<group>"; };
+		8947C886AC2B7E082F797C3B /* RoomAirflow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomAirflow.swift; sourceTree = "<group>"; };
+		8B47CEDCD27136CE7007AAEB /* MechanicalToy.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = MechanicalToy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A5F90CFEF64FF31323B71AE /* TransmissionDriveControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransmissionDriveControl.swift; sourceTree = "<group>"; };
+		A19689D1D9267FA1B547D423 /* ExperimentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperimentDetailView.swift; sourceTree = "<group>"; };
+		A1A95E927961F3BEE3C71ACB /* ToySettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToySettingsView.swift; sourceTree = "<group>"; };
+		A729B691A43C0B15708B6AA6 /* MechanicalCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MechanicalCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9F80517CD7CBE2C9AA4BD27 /* GearGeometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GearGeometry.swift; sourceTree = "<group>"; };
+		B333B7F7ECAA294AD717975F /* OpticalInstrumentSurface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpticalInstrumentSurface.swift; sourceTree = "<group>"; };
+		B99F5437FA41E42377AE1F99 /* MechanicalSolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MechanicalSolver.swift; sourceTree = "<group>"; };
+		BA8308E67970A48187EFEF54 /* RoomLabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomLabView.swift; sourceTree = "<group>"; };
+		BE1479A4957E6F716FB5AC24 /* InstrumentMotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrumentMotion.swift; sourceTree = "<group>"; };
+		BF8A25DFEA5950F4B9A9A670 /* GuidedLabSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidedLabSession.swift; sourceTree = "<group>"; };
+		CCE0EEB52CDD8B5EAED0C720 /* MechanismStage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MechanismStage.swift; sourceTree = "<group>"; };
+		CE6DAD348115BFBAF241703E /* WorkshopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkshopView.swift; sourceTree = "<group>"; };
+		D5F0C325736CE5866880BE59 /* MechanicalToyUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = MechanicalToyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8AA834143BF8064951E5AE0 /* GuidedLabViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidedLabViews.swift; sourceTree = "<group>"; };
+		DC681EF9B9407E6BD33A4F73 /* MechanicalToyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MechanicalToyUITests.swift; sourceTree = "<group>"; };
+		E3CCC27F73E647904ABB8840 /* RoomLabModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomLabModel.swift; sourceTree = "<group>"; };
+		E8469D3DAAD404AC8EAE0057 /* ClimateRoomStage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimateRoomStage.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE2FE7004D63D0AFA4240285 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D5FA73033B0FEFF7C25EE0C /* MechanicalCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1CC347AE50D4D551E6921225 /* GuidedLabs */ = {
+			isa = PBXGroup;
+			children = (
+				BF8A25DFEA5950F4B9A9A670 /* GuidedLabSession.swift */,
+				D8AA834143BF8064951E5AE0 /* GuidedLabViews.swift */,
+			);
+			path = GuidedLabs;
+			sourceTree = "<group>";
+		};
+		2C1FC7908241EEE73A5CAB6E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BE1479A4957E6F716FB5AC24 /* InstrumentMotion.swift */,
+				849CE568DA11A2A1C054DB17 /* MechanicalSound.swift */,
+				26D47CFAAF95033BCD37FC68 /* MotionInput.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		3BA6BFD16093BA7C87FE6203 /* MechanicalCore */ = {
+			isa = PBXGroup;
+			children = (
+				4439A80FE9F57C0201926997 /* ExperimentCatalog.swift */,
+				38296EF6FBAA970FC8DA4077 /* GearTransmission.swift */,
+				5B10090C5240ED9055485D35 /* GuidedLab.swift */,
+				B99F5437FA41E42377AE1F99 /* MechanicalSolver.swift */,
+				8947C886AC2B7E082F797C3B /* RoomAirflow.swift */,
+				1BDA5D923B424EE76B185469 /* RoomEnvironment.swift */,
+			);
+			path = MechanicalCore;
+			sourceTree = "<group>";
+		};
+		3D3F5CBD72EF1DB6A11EB84A /* NativeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7E5EC04B53EB8A02699D939E /* GearGuidedLabUITests.swift */,
+				DC681EF9B9407E6BD33A4F73 /* MechanicalToyUITests.swift */,
+			);
+			path = NativeUITests;
+			sourceTree = "<group>";
+		};
+		517E485808A36532023E7D6C /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				3D3F5CBD72EF1DB6A11EB84A /* NativeUITests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		6940828E383100BC5BC6213F /* Room */ = {
+			isa = PBXGroup;
+			children = (
+				58659F45CE3BFF6D94C499FD /* Airflow.metal */,
+				5EDD56C796411DCD0E196D32 /* AirflowMetalView.swift */,
+				E8469D3DAAD404AC8EAE0057 /* ClimateRoomStage.swift */,
+				E3CCC27F73E647904ABB8840 /* RoomLabModel.swift */,
+				BA8308E67970A48187EFEF54 /* RoomLabView.swift */,
+			);
+			path = Room;
+			sourceTree = "<group>";
+		};
+		7B7C4DB48B693AB941E90DAE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A729B691A43C0B15708B6AA6 /* MechanicalCore.framework */,
+				8B47CEDCD27136CE7007AAEB /* MechanicalToy.app */,
+				D5F0C325736CE5866880BE59 /* MechanicalToyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		816F1C662AE830E67C53C3ED /* Workshop */ = {
+			isa = PBXGroup;
+			children = (
+				A19689D1D9267FA1B547D423 /* ExperimentDetailView.swift */,
+				4B6C22A8156667D9BF6899F1 /* GearGalleryView.swift */,
+				0E4DB864E8A2186ED6AC27DB /* MachinePresets.swift */,
+				9A5F90CFEF64FF31323B71AE /* TransmissionDriveControl.swift */,
+				CE6DAD348115BFBAF241703E /* WorkshopView.swift */,
+			);
+			path = Workshop;
+			sourceTree = "<group>";
+		};
+		837239DAEAB7AA3061699D3D /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				3BA6BFD16093BA7C87FE6203 /* MechanicalCore */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		89479E4FFCC56636B4D1AEA4 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				4B5FDED4D4E9A7D8E8614D8C /* Assets.xcassets */,
+				39CBC0E122D25B5CF1DCEB1D /* Info.plist */,
+				676CEC52E0ED6DA4B2721BDD /* MechanicalToyApp.swift */,
+				0BB97CC272654B1A98162C40 /* Theme.swift */,
+				A1A95E927961F3BEE3C71ACB /* ToySettingsView.swift */,
+				1CC347AE50D4D551E6921225 /* GuidedLabs */,
+				F61093856D4D8522137E0294 /* Notebook */,
+				C0D445C0B14044897F98E7D1 /* Rendering */,
+				6940828E383100BC5BC6213F /* Room */,
+				2C1FC7908241EEE73A5CAB6E /* Services */,
+				816F1C662AE830E67C53C3ED /* Workshop */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C0D445C0B14044897F98E7D1 /* Rendering */ = {
+			isa = PBXGroup;
+			children = (
+				A9F80517CD7CBE2C9AA4BD27 /* GearGeometry.swift */,
+				83DFAAD49290AEC50DE2CBC1 /* GearMetalStage.swift */,
+				7DBBA20B39538C6229AA10A0 /* GearShaders.metal */,
+				CCE0EEB52CDD8B5EAED0C720 /* MechanismStage.swift */,
+				B333B7F7ECAA294AD717975F /* OpticalInstrumentSurface.swift */,
+			);
+			path = Rendering;
+			sourceTree = "<group>";
+		};
+		D8E1CE7A04EF23AC6BD55C35 = {
+			isa = PBXGroup;
+			children = (
+				89479E4FFCC56636B4D1AEA4 /* App */,
+				837239DAEAB7AA3061699D3D /* Sources */,
+				517E485808A36532023E7D6C /* Tests */,
+				7B7C4DB48B693AB941E90DAE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F61093856D4D8522137E0294 /* Notebook */ = {
+			isa = PBXGroup;
+			children = (
+				31F2884F44D5876A66FEBDB4 /* NotebookStore.swift */,
+				2D4A5EA64B888EBEFF4F3FFE /* NotebookView.swift */,
+			);
+			path = Notebook;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1281F28E0A85BB2F1E6361B7 /* MechanicalToyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9748EB8FBBF41EA63F693A5 /* Build configuration list for PBXNativeTarget "MechanicalToyUITests" */;
+			buildPhases = (
+				4694742D984288499B029CC5 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				35CFDCFF3308C1E0F8E04865 /* PBXTargetDependency */,
+			);
+			name = MechanicalToyUITests;
+			packageProductDependencies = (
+			);
+			productName = MechanicalToyUITests;
+			productReference = D5F0C325736CE5866880BE59 /* MechanicalToyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		1BD8100798D6A86AADCFAA9F /* MechanicalCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CEBC3FD4E637443C2AAE3A1 /* Build configuration list for PBXNativeTarget "MechanicalCore" */;
+			buildPhases = (
+				C812D3AE890DCDE12B075099 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MechanicalCore;
+			packageProductDependencies = (
+			);
+			productName = MechanicalCore;
+			productReference = A729B691A43C0B15708B6AA6 /* MechanicalCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		ABD446B536DBE42BC74230F7 /* MechanicalToy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7072D32DF59F91146FD5D8A /* Build configuration list for PBXNativeTarget "MechanicalToy" */;
+			buildPhases = (
+				3BF4E70013B995754592EBF0 /* Sources */,
+				DEC72FD284AA3715F94EF174 /* Resources */,
+				AE2FE7004D63D0AFA4240285 /* Frameworks */,
+				DEC41FB0DEC4BE1D8D1EC111 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC743021F1BA6A136464CF0B /* PBXTargetDependency */,
+			);
+			name = MechanicalToy;
+			packageProductDependencies = (
+			);
+			productName = MechanicalToy;
+			productReference = 8B47CEDCD27136CE7007AAEB /* MechanicalToy.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B2DCFCF8969971B0D8EDA069 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2700;
+				TargetAttributes = {
+					1281F28E0A85BB2F1E6361B7 = {
+
+						ProvisioningStyle = Automatic;
+						TestTargetID = ABD446B536DBE42BC74230F7;
+					};
+					1BD8100798D6A86AADCFAA9F = {
+
+						ProvisioningStyle = Automatic;
+					};
+					ABD446B536DBE42BC74230F7 = {
+
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 89136FD9D63A9B0113434147 /* Build configuration list for PBXProject "MechanicalToy" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = D8E1CE7A04EF23AC6BD55C35;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 7B7C4DB48B693AB941E90DAE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1BD8100798D6A86AADCFAA9F /* MechanicalCore */,
+				ABD446B536DBE42BC74230F7 /* MechanicalToy */,
+				1281F28E0A85BB2F1E6361B7 /* MechanicalToyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DEC72FD284AA3715F94EF174 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				690CDB2510799A1A892C74E2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3BF4E70013B995754592EBF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0BF1CD05AEA04CEA4C762BF /* Airflow.metal in Sources */,
+				CCB7607110C23EB92D9CDA6C /* AirflowMetalView.swift in Sources */,
+				ACF71A23410EE38CA4B3CFDC /* ClimateRoomStage.swift in Sources */,
+				C9E66CF9A7D446914798A086 /* ExperimentDetailView.swift in Sources */,
+				64DFB0229B9F1869CB47ECC8 /* GearGalleryView.swift in Sources */,
+				B32475E00EA56757E1796B7B /* GearGeometry.swift in Sources */,
+				901859187CDD0F278B23100D /* GearMetalStage.swift in Sources */,
+				DA98929495A63DB3494C5565 /* GearShaders.metal in Sources */,
+				79E86D57C42E64260E5F755D /* GuidedLabSession.swift in Sources */,
+				7D46E02539045C9A8E74A482 /* GuidedLabViews.swift in Sources */,
+				B286501C2712E34BC485F0D0 /* InstrumentMotion.swift in Sources */,
+				7489C016656C8DDF4991D4FE /* MachinePresets.swift in Sources */,
+				FF1B8F736369F2921267C3CD /* MechanicalSound.swift in Sources */,
+				740434A0B8E7C906EA2B9101 /* MechanicalToyApp.swift in Sources */,
+				C80A8E3B53F2B2D92E7AFFCF /* MechanismStage.swift in Sources */,
+				474851C89142BC4F6A3A2BCD /* MotionInput.swift in Sources */,
+				F8EAB7C3C48CA8E71F6F5D33 /* NotebookStore.swift in Sources */,
+				7F781F16E320DB97FA788CC8 /* NotebookView.swift in Sources */,
+				549F421BFC3BD9A825EB9670 /* OpticalInstrumentSurface.swift in Sources */,
+				D490CFBC8F520E9AF260BB21 /* RoomLabModel.swift in Sources */,
+				2604F6CB2D3BFE71BBFE88CF /* RoomLabView.swift in Sources */,
+				3A71815D4E6CAF6F0C7D0C47 /* Theme.swift in Sources */,
+				2BE39BA29FF64B66BADED727 /* ToySettingsView.swift in Sources */,
+				EA29BB7B0C5B7F98ACD9780A /* TransmissionDriveControl.swift in Sources */,
+				45BCBE5F591690A38074F943 /* WorkshopView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4694742D984288499B029CC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				019205BE8FB7AA359CE8A3AB /* GearGuidedLabUITests.swift in Sources */,
+				FE680CE6A4C1AE0C4A33A954 /* MechanicalToyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C812D3AE890DCDE12B075099 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8E71DBF4A64073D02895AFD /* ExperimentCatalog.swift in Sources */,
+				7EE6D6F249CDEA9A176BBEC6 /* GearTransmission.swift in Sources */,
+				27EDBDA65720AA575FB5123E /* GuidedLab.swift in Sources */,
+				09230ED932B4D4C6893CD841 /* MechanicalSolver.swift in Sources */,
+				45284A1150E2B9F1A124D1AA /* RoomAirflow.swift in Sources */,
+				1EBB032945E9C4A83B061E4A /* RoomEnvironment.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		35CFDCFF3308C1E0F8E04865 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ABD446B536DBE42BC74230F7 /* MechanicalToy */;
+			targetProxy = 36299A93F4DEFE498BDE4E40 /* PBXContainerItemProxy */;
+		};
+		BC743021F1BA6A136464CF0B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1BD8100798D6A86AADCFAA9F /* MechanicalCore */;
+			targetProxy = CEBD17AEDB17E4DEFCD46E42 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		04A3476CB510D143E17DE14C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.utkarsh.mechanicaltoy.core;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		1384D51AA318CDBFC20E3659 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.utkarsh.MechanicalToyUITests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MechanicalToy;
+			};
+			name = Debug;
+		};
+		1FA86F9FB84DA46FB1C74C78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.utkarsh.MechanicalToyUITests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MechanicalToy;
+			};
+			name = Release;
+		};
+		44A7349E69BD9B9452DC6F8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.utkarsh.mechanicaltoy;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		66114C1A86F97550275667D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.utkarsh.mechanicaltoy.core;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		A6DFF3E553B7406EDB2332D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 4;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		C5068D72C7304C414641F08B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 4;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		D585AC41AF42F54FD94BDA94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.utkarsh.mechanicaltoy;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6CEBC3FD4E637443C2AAE3A1 /* Build configuration list for PBXNativeTarget "MechanicalCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66114C1A86F97550275667D1 /* Debug */,
+				04A3476CB510D143E17DE14C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		89136FD9D63A9B0113434147 /* Build configuration list for PBXProject "MechanicalToy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5068D72C7304C414641F08B /* Debug */,
+				A6DFF3E553B7406EDB2332D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B9748EB8FBBF41EA63F693A5 /* Build configuration list for PBXNativeTarget "MechanicalToyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1384D51AA318CDBFC20E3659 /* Debug */,
+				1FA86F9FB84DA46FB1C74C78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C7072D32DF59F91146FD5D8A /* Build configuration list for PBXNativeTarget "MechanicalToy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D585AC41AF42F54FD94BDA94 /* Debug */,
+				44A7349E69BD9B9452DC6F8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B2DCFCF8969971B0D8EDA069 /* Project object */;
+}
